@@ -1,4 +1,5 @@
-@Library('deployment')
+@Library('deployment') _ // Carga la librería compartida
+
 import org.example.util.Helper
 
 pipeline {
@@ -9,7 +10,7 @@ pipeline {
             steps {
                 script {
                     // Llamar a la función definida en vars/miPaso.groovy
-                    call('¡Hola desde la librería compartida!')
+                    miPaso('¡Hola desde la librería compartida!')
                 }
             }
         }
