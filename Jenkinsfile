@@ -9,7 +9,7 @@ pipeline {
             steps {
                 script {
                     // Llamar a la función definida en vars/miPaso.groovy
-                    miPaso('¡Hola desde la librería compartida!')
+                    call('¡Hola desde la librería compartida!')
                 }
             }
         }
